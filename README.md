@@ -11,9 +11,25 @@ The main goals of project are:
 * Native
 
 # Common structure
+- my_app
+    - assets
+      - some_image.png
+      - some_font.ttf
+      - ...
+    - storage
+      - storage.rs
+    - router
+      - router.rs
+    - components
+      - person_card.cg
+      - header.cg
+    - screens
+      - main_screen.cg
+    - app.cg
+    - main.rs
 
 simple screen component should look like that:
-```vue
+```html
 <template>
     <div>
         <p> {{ text }} </p>
@@ -34,3 +50,4 @@ let component_storage = Storage::new();
 component_storage.set("text", "Hello world!");
 </rust>
 ```
+
